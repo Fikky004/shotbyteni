@@ -196,5 +196,24 @@ love and remember.
 
 </div>
 </body>
+    <!-- Lightweight performance enhancer -->
+<script>
+  // Ensure images load efficiently (if not already using lazy)
+  document.addEventListener("DOMContentLoaded", function() {
+    const imgs = document.querySelectorAll("img");
+    imgs.forEach(img => {
+      if (!img.hasAttribute("loading")) {
+        img.setAttribute("loading", "lazy");
+      }
+    });
+  });
+
+  // Optional: remove unused JavaScript from console errors
+  window.addEventListener('error', function(e) {
+    console.log('Minor error ignored for smoother experience:', e.message);
+  });
+</script>
+
 </html>
+
 
