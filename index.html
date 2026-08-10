@@ -1,219 +1,375 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Professional photography by Teni – portraits, events, and creative shoots.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOT_BYTENI</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shot_byTeni — Photography, London</title>
+<meta name="description" content="Shot_byTeni — portrait, lifestyle and documentary photography by Teni, based in London. Lens on Life.">
+<meta name="theme-color" content="#121110">
+
+<link rel="preload" href="style.css" as="style">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<meta property="og:title" content="Shot_byTeni — Photography, London">
+<meta property="og:description" content="Portrait, lifestyle and documentary photography. Lens on Life.">
+<meta property="og:image" content="main/shotbyteni.png">
+<meta property="og:type" content="website">
 </head>
 <body>
-    <div class="glow-effect">
-    <div class="premium-animate">
-    <section id="home">
-    <header>
-        <img class="logo" src="main/shotbyteni.png" alt="logo">
-        <nav>
+
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="site-header">
+    <div class="header-inner">
+        <a href="#top" class="brand">
+            <img src="main/shotbyteni.png" alt="Shot_byTeni" width="78" height="78" class="brand-mark">
+            <span class="brand-name">Shot<em>_by</em>Teni</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
             <ul class="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#bookasession">Book a Session</a>
-                    </ul>
-                    </nav>
-                     </header>
-<div class="body">
-    <img class="image1" src="main/ja1facingback.jpg" alt="clients image1" width="242" height="190">
+                <li><a href="#work" data-nav>Work</a></li>
+                <li><a href="#about" data-nav>About</a></li>
+                <li><a href="#specialties" data-nav>Specialties</a></li>
+                <li><a href="#booking" data-nav>Booking</a></li>
+                <li><a href="#contact" class="nav-cta" data-nav>Get in Touch</a></li>
+            </ul>
+        </nav>
 
-    <img class="image2" src="main/guyposingwearinggrey.jpg" alt="clients image2" width="222" height="195">
-
-    <h1 class="title">SHOT_BYTENI</h1>
-    <h1 class="title2">"LENS ON LIFE"</h1>
-
-    <img class="image3" src="main/guywearinggreyposinginarefective.jpg" alt="clients image3" width="262" height="229">
-    <img class="image4" src="main/girlbehindbars.jpg" alt="clients image 4" width="245" height="300px">
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-    </section>
 
-    <section id="about">
-<div class="about">
- <h1>ABOUT US</h1>
-    <p>
-        Welcome to Shot_byteni, where every shot tells a story.</p>
-        <br>
-<p>Founded by Teni, a passionate teenage photographer based in  London,<br>Shot_byteni brings a fresh,
- youthful perspective to modern photography.<br>
- With a camera in hand and a creative eye,Teni captures authentic moments<br> that reflects personality, 
- emotion and style.</p>
-<br>
-<p>At Shot_byteni, our motto is "Lens on Life" because we believe<br>
-photography is more than just pictures. 
-It's about freezing real<br>
- moments, raw emotions, and meaningful connections in time.</p>
-<br>
-<p>From portraits sessions to lifestyle shoots, brand content, and creative concepts,<br>
-every session is designed to reflect you.<br>
-Expect a relaxed, personalized experience with high-quality images that you'll<br>
-love and remember.
-<br></p>
-<p><strong><i>Let's bring your vison to life-one shot at a time.</strong></i></p>
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#work" data-nav data-mobile>Work</a></li>
+            <li><a href="#about" data-nav data-mobile>About</a></li>
+            <li><a href="#specialties" data-nav data-mobile>Specialties</a></li>
+            <li><a href="#booking" data-nav data-mobile>Booking</a></li>
+            <li><a href="#contact" data-nav data-mobile>Get in Touch</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <a href="https://www.instagram.com/shot_byteni/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.tiktok.com/@shot_byteni" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+    </div>
+</header>
 
-<img class="CEO" src="main/teniholdingphoneaboutus.jpg" alt="CEO ABOUT US PAGE">
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+    <div class="hero-media">
+        <img src="main/girlbehindbars.jpg" alt="Portrait study in light and shadow" class="hero-img" width="1600" height="2000">
+        <div class="hero-scrim"></div>
+    </div>
+
+    <div class="hero-content">
+        <p class="hero-eyebrow" data-reveal>Portrait &amp; Documentary Photography — London</p>
+        <h1 class="hero-title" data-reveal>
+            <span class="hero-mark">Shot_byTeni</span>
+        </h1>
+        <p class="hero-tagline" data-reveal>Lens on Life.</p>
+        <p class="hero-sub" data-reveal>Real people, real moments — shaped into images worth keeping.</p>
+        <div class="hero-actions" data-reveal>
+            <a href="#work" class="btn btn-primary">View the Work</a>
+            <a href="#booking" class="btn btn-ghost">Book a Session</a>
+        </div>
+    </div>
+
+    <a href="#work" class="scroll-cue" aria-label="Scroll to work">
+        <span class="scroll-cue-line"></span>
+        <span class="scroll-cue-label">Scroll</span>
+    </a>
 </section>
-<h1 class="clientworks"><strong>My Works</strong></h1>
-<div class="flex-content"> 
-    <img class="image5" src="main/agirlposing.jpg" alt="client image shoot">
-    <img class="image6" src="main/twogirlsposing.jpg" alt="client image shoot2">
-    <img class="image7" src="main/ja1withhisphone.jpg" alt="client image shoot3">
-</div>
 
-<h1 class="work1">Birthday Shoots</h1>
-<p class="pwork">ELEGANT PHOTOGRAPHY <br>
- CAPTURING EVERY SPECIAL DETAIL<br>
- AND EMOTION OF YOUR DAY.
-</p>
+<!-- ============ SELECTED WORK ============ -->
+<section class="section work" id="work">
+    <div class="container">
+        <div class="section-head" data-reveal>
+            <p class="eyebrow">Selected Work</p>
+            <h2>A frame for every story.</h2>
+        </div>
 
-<h1 class="work2">Group Photographs</h1>
-<p class="pwork2">PROFESSIONAL PORTRAITS FOR <br>
- INDIVIDUALS,FAMILIES,AND<br>
- GROUPS IN STUDIO OR ON LOCATION.
-</p>
+        <div class="gallery" id="gallery">
+            <figure class="gallery-item" data-reveal>
+                <img src="main/ja1facingback.jpg" alt="Portrait, subject facing away in soft light" loading="lazy" width="242" height="190">
+                <figcaption>
+                    <span class="g-title">Facing Forward</span>
+                    <span class="g-meta"><span>Portrait</span><span>2025</span></span>
+                </figcaption>
+            </figure>
 
-<h1 class="work3">Shots For the Gram</h1>
-<p class="pwork3">COVERAGE FOR PARTIES, CORPORATE <br>
- EVENTS,AND CELEBRATION WITH<br>
- A CANDID,DOCUMENTARY STYLE.
-</p>
- <div class="works1">
-<div class="grid-images">
-    <img class="gimage1" src="main/fatheranddaughter.jpg"alt="another client image" width="550px" height="550px">
-    <img class="gimage2" src="main/guytouchingtoe.jpg" alt="client image2" width="550px" height="550px">
-</div>
-<div class="grid-images2">
-    <img class="gimage3" src="main/football.jpg" alt="outdoor shot" width="550px" height="550px">
-    <img  class="gimage4" src="main/2guysphotoshoot.jpg" alt="group shot" width="550px" height="550px">
-</div>
-</div>
+            <figure class="gallery-item" data-reveal>
+                <img src="main/guyposingwearinggrey.jpg" alt="Studio portrait, subject in grey tones" loading="lazy" width="222" height="195">
+                <figcaption>
+                    <span class="g-title">Grey Hour</span>
+                    <span class="g-meta"><span>Portrait</span><span>2025</span></span>
+                </figcaption>
+            </figure>
 
-<div class="works2">
-    <div class="grid-images3">
-        <img class="gimage5" src="main/guyssittinginacar.jpg"alt="another client image" width="900px" height="900px">
-        <img class="gimage6" src="main/guystandinginacar.jpg"alt="another client image" width="900px" height="900px">
-</div>
-<div class="grid-images4">
-    <img class="gimage7" src="main/girlbehingbuildingandwater.jpg" alt="another client image" width="700px" height="900px">
-    <img class="gimage8" src="main/guywithcurrencysittinginthecar.jpg" alt="another client image" width="700px" height="900px">
-</div>
-</div>
-</div>
-<div class="testimonials">
-         <h1><strong>Client testimonials</strong></h1>
-         <h1><strong>Kind words from past clients </strong></h1>
-         </div>
+            <figure class="gallery-item" data-reveal>
+                <img src="main/guywearinggreyposinginarefective.jpg" alt="Portrait with reflective surface" loading="lazy" width="262" height="229">
+                <figcaption>
+                    <span class="g-title">Reflections</span>
+                    <span class="g-meta"><span>Editorial</span><span>2025</span></span>
+                </figcaption>
+            </figure>
 
-         <div class="testimonials-images">
-            <img src="main/testimonial1.jpg" width="400px" height="400px">
-            <img src="main/testimonial2.jpg" width="250px" height="500px">
-            <img src="main/testimonial3.jpg" width="430px" height="400px">
-         </div>
+            <figure class="gallery-item" data-reveal>
+                <img src="main/agirlposing.jpg" alt="Portrait session, natural light" loading="lazy">
+                <figcaption>
+                    <span class="g-title">Golden Hour</span>
+                    <span class="g-meta"><span>Portrait</span><span>2025</span></span>
+                </figcaption>
+            </figure>
 
+            <figure class="gallery-item" data-reveal>
+                <img src="main/twogirlsposing.jpg" alt="Two subjects posing together" loading="lazy">
+                <figcaption>
+                    <span class="g-title">Two of Us</span>
+                    <span class="g-meta"><span>Group</span><span>2024</span></span>
+                </figcaption>
+            </figure>
 
-         <div class="session" id="bookasession">
-            <h1><strong>Let's work together.</strong></h1>
-            <h2>Book a photography session or ask about availability</h2>
-            <h2><strong>Book a session now!</strong></h2>
-            <hr>
-            <br>
-            <h1><strong>PRICE PACKAGES!</strong></h1>
-            <strong>
-            <h2>1 hour session: £30
-                (If location is more than 40 minutes away from me,there will be an additional
-                £5 charge.)
-            </h2>
-            <br>
-                <h2>2 hour session: £50
-                Anything more that two hours, prices will be negotiated.
-                </h2>
-            </strong>
-            <hr>
-            <br>
-            <h1><strong>Booking & Session Policy</strong></h1>
-           <h2> Thank you for choosing Shot_byTeni!.Please read the following policy carefully before booking your
-            Session:
-            <br>
-            <br>
-            <h3>1.Booking Confirmation: A non-refundable payment of £10 is required to confirm your booking.
-            No appointment is secured without this payment.</h3>
-            <br>
-            <h3>2.Late Arrivals: If you arrive more than 20 minutes late, a £5 late fee will be added to your final
-            balance. Please arrive on time to make the most of your session.</h3>
-            <br>
-            <h3>3.Rescheduling: Sessions may be rescheduled at no extra cost in the event of emegencies or weather-related
-            issues. Please provide as much notice as possible</h3>
-            <br>
-            <h3>4.Image Delivery: Standard turnaround time for edited images in 2 days. Expedited delivery is available
-            upon request for an additional fee.</h3>
-            <br>
-            <h4>By booking with Shot_byTeni, you agree to these terms,if you have any questions,feel free to reach before
-            booking.</h4>
-            </h2>
-        
-            
+            <figure class="gallery-item" data-reveal>
+                <img src="main/fatheranddaughter.jpg" alt="Father and daughter portrait" loading="lazy" width="550" height="550">
+                <figcaption>
+                    <span class="g-title">Father &amp; Daughter</span>
+                    <span class="g-meta"><span>Family</span><span>2024</span></span>
+                </figcaption>
+            </figure>
 
-         </div>
-</div>
+            <figure class="gallery-item" data-reveal>
+                <img src="main/ja1withhisphone.jpg" alt="Candid lifestyle shot with phone" loading="lazy">
+                <figcaption>
+                    <span class="g-title">On Call</span>
+                    <span class="g-meta"><span>Lifestyle</span><span>2024</span></span>
+                </figcaption>
+            </figure>
 
-<div class="connect premium-animate" id="contact">
-    <!-- Your contact form -->
+            <figure class="gallery-item" data-reveal>
+                <img src="main/guytouchingtoe.jpg" alt="Candid lifestyle movement shot" loading="lazy" width="550" height="550">
+                <figcaption>
+                    <span class="g-title">Warm Up</span>
+                    <span class="g-meta"><span>Lifestyle</span><span>2024</span></span>
+                </figcaption>
+            </figure>
 
-<div class="connect">
-    <h1 class="head"><strong>Contact Us</strong></h1>
-   <form action="https://formspree.io/f/mnnzoeqv" method="POST">
-    <input type="text" name="name" placeholder="Name/Company/Business" required><br>
-    <input type="email" name="_replyto" placeholder="Your Email" required><br>
-    <textarea name="message" placeholder="Your Message/Proposal" required></textarea><br>
-    <button type="submit">Send Proposal</button>
-</form>
-     <a href="mailto:shotbyteni@gmail.com">Email Us</a>
-    <a href="https://www.instagram.com/shot_byteni/" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@shot_byteni" target="_blank">TikTok</a>
-    <a href="https://www.snapchat.com/add/shot_byteni" target="_blank">Snapchat</a>
-</div>
-</div>
-</div>
-<div class="glow-orbs">
-    <span style="width:20px; height:20px; top:5%; left:10%; animation-delay:0s;"></span>
-    <span style="width:15px; height:15px; top:15%; left:25%; animation-delay:2s;"></span>
-    <span style="width:25px; height:25px; top:30%; left:40%; animation-delay:4s;"></span>
-    <span style="width:10px; height:10px; top:50%; left:55%; animation-delay:1s;"></span>
-    <span style="width:18px; height:18px; top:70%; left:70%; animation-delay:3s;"></span>
-    <span style="width:22px; height:22px; top:85%; left:80%; animation-delay:5s;"></span>
-    <span style="width:14px; height:14px; top:10%; left:60%; animation-delay:1.5s;"></span>
-    <span style="width:28px; height:28px; top:40%; left:15%; animation-delay:3.5s;"></span>
-    <span style="width:12px; height:12px; top:60%; left:35%; animation-delay:4.5s;"></span>
-    <span style="width:16px; height:16px; top:80%; left:50%; animation-delay:2.5s;"></span>
-</div>
+            <figure class="gallery-item" data-reveal>
+                <img src="main/football.jpg" alt="Outdoor football action shot" loading="lazy" width="550" height="550">
+                <figcaption>
+                    <span class="g-title">Match Day</span>
+                    <span class="g-meta"><span>Outdoor</span><span>2024</span></span>
+                </figcaption>
+            </figure>
 
-</div>
+            <figure class="gallery-item" data-reveal>
+                <img src="main/2guysphotoshoot.jpg" alt="Two subjects, group photoshoot" loading="lazy" width="550" height="550">
+                <figcaption>
+                    <span class="g-title">Brotherhood</span>
+                    <span class="g-meta"><span>Group</span><span>2024</span></span>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item" data-reveal>
+                <img src="main/guyssittinginacar.jpg" alt="Subject seated in car, editorial style" loading="lazy" width="900" height="900">
+                <figcaption>
+                    <span class="g-title">Idle</span>
+                    <span class="g-meta"><span>Editorial</span><span>2024</span></span>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item" data-reveal>
+                <img src="main/guystandinginacar.jpg" alt="Subject standing by car, editorial style" loading="lazy" width="900" height="900">
+                <figcaption>
+                    <span class="g-title">Departure</span>
+                    <span class="g-meta"><span>Editorial</span><span>2024</span></span>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="viewfinder" id="viewfinder" aria-hidden="true">
+            <span class="vf-corner vf-tl"></span>
+            <span class="vf-corner vf-tr"></span>
+            <span class="vf-corner vf-bl"></span>
+            <span class="vf-corner vf-br"></span>
+            <span class="vf-label">View</span>
+        </div>
+    </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+    <div class="container about-grid">
+        <div class="about-statement" data-reveal>
+            <p class="eyebrow">About</p>
+            <h2>A camera in hand,<br>a story in every frame.</h2>
+        </div>
+
+        <div class="about-body" data-reveal>
+            <p>Shot_byTeni is a London-based photography practice founded by Teni — a photographer with a fresh, youthful eye and a documentary instinct for real moments.</p>
+            <p>Every session is built around the person in front of the lens: relaxed, unscripted, and shaped to reflect genuine personality rather than a formula. From portraits to lifestyle content, brand shoots and creative concepts, the goal is the same — images that still feel true a decade from now.</p>
+            <p class="about-quote">"Let's bring your vision to life, one shot at a time."</p>
+            <a href="#booking" class="btn btn-outline">Book a Session</a>
+        </div>
+
+        <figure class="about-portrait" data-reveal>
+            <img src="main/teniholdingphoneaboutus.jpg" alt="Teni, founder and photographer at Shot_byTeni" loading="lazy">
+        </figure>
+    </div>
+</section>
+
+<!-- ============ SPECIALTIES ============ -->
+<section class="section specialties" id="specialties">
+    <div class="container">
+        <div class="section-head" data-reveal>
+            <p class="eyebrow">Specialties</p>
+            <h2>Where the lens goes.</h2>
+        </div>
+
+        <ul class="spec-list" data-reveal>
+            <li class="spec-row">
+                <span class="spec-name">Portraits</span>
+                <span class="spec-desc">Individual sessions built around who you are, in studio or on location.</span>
+            </li>
+            <li class="spec-row">
+                <span class="spec-name">Birthday Shoots</span>
+                <span class="spec-desc">Elegant coverage that captures every detail and emotion of the day.</span>
+            </li>
+            <li class="spec-row">
+                <span class="spec-name">Group &amp; Family</span>
+                <span class="spec-desc">Professional portraits for individuals, families and groups.</span>
+            </li>
+            <li class="spec-row">
+                <span class="spec-name">Events &amp; Parties</span>
+                <span class="spec-desc">Candid, documentary-style coverage for parties and celebrations.</span>
+            </li>
+            <li class="spec-row">
+                <span class="spec-name">Lifestyle &amp; Content</span>
+                <span class="spec-desc">Shots for the gram — content that looks like you, not a stock photo.</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============ FEATURED PROJECT ============ -->
+<section class="section featured" id="featured">
+    <div class="featured-media" data-reveal>
+        <img src="main/girlbehingbuildingandwater.jpg" alt="Featured editorial shoot, subject against building and water" loading="lazy" width="700" height="900">
+    </div>
+    <div class="featured-content" data-reveal>
+        <p class="eyebrow">Featured Project</p>
+        <h2>A Story, In Motion</h2>
+        <p>An editorial series shot across London — chasing natural light, architecture and reflection to build a narrative out of a single afternoon. This is the kind of trust an ongoing client relationship makes possible: room to experiment, and a result worth remembering.</p>
+        <img class="featured-secondary" src="main/guywithcurrencysittinginthecar.jpg" alt="Supporting shot from the featured editorial series" loading="lazy" width="700" height="900">
+    </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-head center" data-reveal>
+            <p class="eyebrow">Client Testimonials</p>
+            <h2>Kind words from past clients.</h2>
+        </div>
+        <div class="testimonial-strip" data-reveal>
+            <img src="main/testimonial1.jpg" alt="Client testimonial" loading="lazy" width="400" height="400">
+            <img src="main/testimonial2.jpg" alt="Client testimonial" loading="lazy" width="250" height="500">
+            <img src="main/testimonial3.jpg" alt="Client testimonial" loading="lazy" width="430" height="400">
+        </div>
+    </div>
+</section>
+
+<!-- ============ BOOKING / PRICING ============ -->
+<section class="section booking" id="booking">
+    <div class="container booking-grid">
+        <div data-reveal>
+            <p class="eyebrow">Packages</p>
+            <h2>Simple, transparent pricing.</h2>
+
+            <div class="price-row">
+                <div class="price-label">
+                    <span class="price-name">1 Hour Session</span>
+                    <span class="price-note">+£5 if location is more than 40 minutes away</span>
+                </div>
+                <span class="price-amount">£30</span>
+            </div>
+            <div class="price-row">
+                <div class="price-label">
+                    <span class="price-name">2 Hour Session</span>
+                    <span class="price-note">Anything beyond two hours is priced on request</span>
+                </div>
+                <span class="price-amount">£50</span>
+            </div>
+
+            <a href="#contact" class="btn btn-primary booking-cta">Enquire About Availability</a>
+        </div>
+
+        <div data-reveal>
+            <p class="eyebrow">Booking &amp; Session Policy</p>
+            <h3 class="policy-lead">Please read before booking your session.</h3>
+            <ol class="policy-list">
+                <li><strong>Booking confirmation.</strong> A non-refundable payment of £10 is required to confirm your booking — no appointment is secured without it.</li>
+                <li><strong>Late arrivals.</strong> Arriving more than 20 minutes late adds a £5 late fee to your final balance.</li>
+                <li><strong>Rescheduling.</strong> Free of charge for emergencies or weather-related issues — please give as much notice as possible.</li>
+                <li><strong>Image delivery.</strong> Standard turnaround is 2 days. Expedited delivery is available on request for an additional fee.</li>
+            </ol>
+            <p class="policy-footnote">By booking with Shot_byTeni, you agree to these terms. Questions are always welcome before you book.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+    <div class="container contact-grid">
+        <div class="contact-intro" data-reveal>
+            <p class="eyebrow">Get in Touch</p>
+            <h2>Let's create something<br>worth remembering.</h2>
+            <p class="contact-sub">Tell me a little about what you have in mind, and I'll get back to you shortly.</p>
+
+            <div class="contact-links">
+                <a href="mailto:shotbyteni@gmail.com">shotbyteni@gmail.com</a>
+                <a href="https://www.instagram.com/shot_byteni/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.tiktok.com/@shot_byteni" target="_blank" rel="noopener noreferrer">TikTok</a>
+                <a href="https://www.snapchat.com/add/shot_byteni" target="_blank" rel="noopener noreferrer">Snapchat</a>
+            </div>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/mnnzoeqv" method="POST" data-reveal>
+            <div class="field">
+                <label for="name">Name / Company</label>
+                <input type="text" id="name" name="name" placeholder="Your name or business" required>
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" placeholder="you@email.com" required>
+            </div>
+            <div class="field">
+                <label for="message">Message / Proposal</label>
+                <textarea id="message" name="message" placeholder="Tell me about the shoot you're planning..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Proposal</button>
+        </form>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>© <span id="year"></span> Shot_byTeni. Lens on Life.</span>
+        <a href="#top" class="footer-top">Back to top</a>
+    </div>
+</footer>
+
+<script src="script.js" defer></script>
 </body>
-    <!-- Lightweight performance enhancer -->
-<script>
-  // Ensure images load efficiently (if not already using lazy)
-  document.addEventListener("DOMContentLoaded", function() {
-    const imgs = document.querySelectorAll("img");
-    imgs.forEach(img => {
-      if (!img.hasAttribute("loading")) {
-        img.setAttribute("loading", "lazy");
-      }
-    });
-  });
-
-  // Optional: remove unused JavaScript from console errors
-  window.addEventListener('error', function(e) {
-    console.log('Minor error ignored for smoother experience:', e.message);
-  });
-</script>
-
 </html>
-
-
